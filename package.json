@@ -1,0 +1,46 @@
+{
+  "name": "tmox-react",
+  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GolamRafi27oo/tmox-react.git"
+  },
+  "description": "A tiny utility to merge Tailwind CSS class names safely using clsx and tailwind-merge.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "tailwindcss",
+    "clsx",
+    "tailwind-merge",
+    "classnames",
+    "utility",
+    "react"
+  ],
+  "author": "Golam Rafi",
+  "license": "MIT",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "bugs": {
+    "url": "https://github.com/GolamRafi27oo/tmox-react/issues"
+  },
+  "homepage": "https://github.com/GolamRafi27oo/tmox-react"
+}
