@@ -8,7 +8,7 @@ Package link: [npm tmox-react](https://www.npmjs.com/package/tmox-react?activeTa
 
 ---
 
-## 🚀 Features
+## Features
 
 - Combines conditional class names using `clsx`
 - Automatically merges conflicting Tailwind CSS classes using `tailwind-merge`
@@ -17,7 +17,7 @@ Package link: [npm tmox-react](https://www.npmjs.com/package/tmox-react?activeTa
 
 ---
 
-## 📦 Installation
+## Installation
 
 Install with **npm**, **yarn**, or **pnpm**:
 
@@ -33,13 +33,12 @@ pnpm add tmox-react
 
 ```
 
-```bash
-# import
-import { tmox-react } from tmox-react
+```javascript
+import { tmox } from "tmox-react";
 ```
 
-```javaScript
-#example
+```javascript
+// Example
 
 import { tmox } from 'tmox-react';
 
