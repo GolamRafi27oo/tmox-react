@@ -1,6 +1,8 @@
 {
   "name": "tmox-react",
-  "version": "1.0.1",
+  "version": "1.1.0",
+  "type": "module",
+  "packageManager": "pnpm@10.22.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GolamRafi27oo/tmox-react.git"
@@ -10,17 +12,20 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "dist-cjs"
   ],
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.js",
+      "require": "./dist-cjs/index.js",
       "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && tsc -p tsconfig.cjs.json",
+    "test": "pnpm run build && node --test",
+    "prepublishOnly": "pnpm run build"
   },
   "keywords": [
     "tailwindcss",
