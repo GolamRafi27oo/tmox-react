@@ -2,6 +2,7 @@
   "name": "tmox-react",
   "version": "1.0.1",
   "type": "module",
+  "packageManager": "pnpm@10.22.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GolamRafi27oo/tmox-react.git"
@@ -22,7 +23,9 @@
     }
   },
   "scripts": {
-    "build": "tsc && tsc -p tsconfig.cjs.json"
+    "build": "tsc && tsc -p tsconfig.cjs.json",
+    "test": "pnpm run build && node --test",
+    "prepublishOnly": "pnpm run build"
   },
   "keywords": [
     "tailwindcss",
